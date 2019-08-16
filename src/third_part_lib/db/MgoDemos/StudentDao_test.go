@@ -1,7 +1,6 @@
 package main
 
 import (
-	"First-go/src/MgoDemos/sysinit"
 	"fmt"
 	"gopkg.in/mgo.v2/bson"
 	"log"

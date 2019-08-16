@@ -1,7 +1,7 @@
 package main
 
 import (
-	"First-go/src/MgoDemos/sysinit"
+	"Lets-GO/src/third_part_lib/db/MgoDemos/sysinit"
 	"fmt"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
