@@ -1,4 +1,4 @@
-module First-go
+module Lets-GO
 
 go 1.12
 
