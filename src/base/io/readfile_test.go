@@ -1,6 +1,8 @@
 package io
 
 import (
+	"bufio"
+	"bytes"
 	"encoding/csv"
 	"fmt"
 	"golang.org/x/text/encoding/simplifiedchinese"
@@ -77,4 +79,28 @@ func Test_read_gbktring(t *testing.T) {
 	fmt.Println(string(result), string(file))
 	fmt.Println(len(file), len(result))
 
+}
+
+// 逐行读取文件
+func Test_read_by_line(t *testing.T) {
+	file, _ := os.Open("data2.csv")
+	defer file.Close()
+
+	scanner := bufio.NewScanner(file)
+	scanner.Split(bufio.ScanLines)
+
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+
+}
+
+//获取文件行数
+func Test_filelineNumber(t *testing.T) {
+	file, _ := os.Open("data2.csv")
+	defer file.Close()
+
+	b, _ := ioutil.ReadAll(file)
+	count := bytes.Count(b, []byte{'\n'}) + 1
+	fmt.Println(count)
 }

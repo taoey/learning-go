@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	redis "github.com/gomodule/redigo/redis"
+	"github.com/gomodule/redigo/redis"
 	"os"
 )
 
