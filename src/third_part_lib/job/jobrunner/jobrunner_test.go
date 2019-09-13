@@ -1,7 +1,7 @@
 package jobrunner
 
 import (
-	"Lets-GO/src/third_part_lib/job/jobrunner/job"
+	"github.com/Taoey/Lets-Go/src/third_part_lib/job/jobrunner/job"
 	"github.com/bamzi/jobrunner"
 	"testing"
 	"time"
