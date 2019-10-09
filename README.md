@@ -16,14 +16,14 @@
 
 ### 推荐书籍
 
-| 名称                                                         | 推荐指数 | 备注                                                         | 学习进度 |
-| ------------------------------------------------------------ | -------- | ------------------------------------------------------------ | -------- |
-| [《Mastering GO》（《玩转 GO》)](https://github.com/hantmac/Mastering_Go_ZH_CN) | 5        | 适用于go的深入了解，包括其内部机制等等                       |          |
-| [《Go 语言标准库》](https://www.kancloud.cn/wizardforcel/golang-stdlib-ref/121475) |          |                                                              |          |
-| [over-golang](https://github.com/overnote/over-golang)       |          | github开源书籍，涉及Go语法、Go并发思想、Go与web开发、Go微服务设施等，适用于深入学习go |          |
-| [《研磨设计模式》](https://github.com/senghoo/golang-design-pattern) |          | go语言版设计模式                                             |          |
-| [《the way to go》（《Go 入门指南》）](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md) |          |                                                              |          |
-| [All programming languages books](https://github.com/KeKe-Li/book) |          |                                                              |          |
+| 名称                                                         | 备注                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [《Mastering GO](https://github.com/hantmac/Mastering_Go_ZH_CN) | 适用于go的深入了解，包括其内部机制等等                       |
+| [《Go 语言标准库》](https://www.kancloud.cn/wizardforcel/golang-stdlib-ref/121475) |                                                              |
+| [over-golang](https://github.com/overnote/over-golang)       | github开源书籍，涉及Go语法、Go并发思想、Go与web开发、Go微服务设施等，适用于深入学习go |
+| [《研磨设计模式》](https://github.com/senghoo/golang-design-pattern) | go语言版设计模式                                             |
+| [《the way to go》](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md) |                                                              |
+| [All programming languages books](https://github.com/KeKe-Li/book) |                                                              |
 
 ### 推荐文章
 
