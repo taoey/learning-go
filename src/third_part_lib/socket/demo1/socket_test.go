@@ -1,4 +1,4 @@
-package demo2
+package demo1
 
 import (
 	"flag"

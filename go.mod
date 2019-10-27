@@ -8,7 +8,8 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/googollee/go-socket.io v1.4.2
 	github.com/gorilla/websocket v1.4.1
-	github.com/robfig/cron/v3 v3.0.0
+	github.com/pkg/errors v0.8.1 // indirect
+	github.com/skip2/go-qrcode v0.0.0-20190110000554-dc11ecdae0a9
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
 	go.uber.org/zap v1.10.0
@@ -16,4 +17,5 @@ require (
 	gopkg.in/alexcesaro/quotedprintable.v3 v3.0.0-20150716171945-2caba252f4dc // indirect
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
 	gopkg.in/mgo.v2 v2.0.0-20190816093944-a6b53ec6cb22
+	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 )

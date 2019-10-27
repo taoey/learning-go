@@ -25,6 +25,7 @@
 | [the way to go](https://github.com/unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md) |                                                              |
 | [All programming languages books](https://github.com/KeKe-Li/book) |                                                              |
 | [看云-golang](https://www.kancloud.cn/uvohp5na133/golang/933968) | 有很多错误及面试总结，适合各阶段go语言开发者                 |
+| [Go语言标准库](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/) |                                                              |
 
 ### 推荐文章
 
@@ -56,6 +57,9 @@
 
 ### 相关库
 
-- excel文件操作：[excelize](https://xuri.me/excelize/zh-hans/)
-- 有用的 Go 模板函数：[sprig](https://github.com/Masterminds/sprig)
+| 名称                                            | 功能               | 备注                                                         |
+| ----------------------------------------------- | ------------------ | ------------------------------------------------------------ |
+| [excelize](https://xuri.me/excelize/zh-hans/)   | excel文件操作      |                                                              |
+| [sprig](https://github.com/Masterminds/sprig)   | 有用的 Go 模板函数 |                                                              |
+| [go-qrcode](https://github.com/skip2/go-qrcode) | 二维码生成         | [Go语言生成二维码是如此简单](https://www.flysnow.org/2017/09/29/go-qrcode.html) |
 
