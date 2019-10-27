@@ -1,8 +1,8 @@
-package main
+package mgo
 
 import (
     "fmt"
-    "github.com/Taoey/Lets-Go/src/third_part_lib/cron/dbon/db/MgoDemos/sysinit"
+    "github.com/Taoey/Lets-Go/src/third_part_lib/mgo/sysinit"
     "gopkg.in/mgo.v2"
     "gopkg.in/mgo.v2/bson"
     "log"

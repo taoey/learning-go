@@ -1,8 +1,8 @@
-package main
+package mgo
 
 import (
     "fmt"
-    "github.com/Taoey/Lets-Go/src/third_part_lib/cron/dbon/db/MgoDemos/sysinit"
+    "github.com/Taoey/Lets-Go/src/third_part_lib/mgo/sysinit"
     "gopkg.in/mgo.v2/bson"
     "log"
     "math/rand"
@@ -93,7 +93,7 @@ func TestInsertGradeDemo(t *testing.T) {
 
 func TestTime(t *testing.T) {
     start := time.Now().UnixNano() / 1e6
-    time.Sleep(time.Duration(2) * time.Second)
+    time.Sleep(time.Second * 2)
 
     end := time.Now().UnixNano() / 1e6
     fmt.Println(end - start)
