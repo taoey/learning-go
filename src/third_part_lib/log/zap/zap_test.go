@@ -2,7 +2,6 @@ package zap
 
 import (
 	"go.uber.org/zap"
-	"log"
 	"testing"
 	"time"
 )
@@ -18,6 +17,7 @@ func Test00(t *testing.T) {
 		"attempt", 3,
 		"backoff", time.Second,
 	)
+	//2019-09-26T14:22:31.914+0800	INFO	zap/zap_test.go:27	无法获取网址	{"url": "http://www.baidu.com", "attempt": 3, "backoff": "1s"}
 	sugar.Infof("Failed to fetch URL: %s", url)
 }
 
@@ -30,11 +30,7 @@ func Test01(t *testing.T) {
 		zap.Int("attempt", 3),
 		zap.Duration("backoff", time.Second),
 	)
-}
-func init() {
-	log.SetFlags(log.Ldate | log.Lshortfile)
-}
 
-func Test02(t *testing.T) {
-	log.Println("hello")
+	//2019-09-26T14:22:31.925+0800	DEBUG	zap/zap_test.go:33	hello
+	logger.Debug("hello")
 }
