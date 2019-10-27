@@ -4,9 +4,11 @@ import (
 	"bufio"
 	"bytes"
 	"encoding/csv"
+	"encoding/hex"
 	"fmt"
 	"golang.org/x/text/encoding/simplifiedchinese"
 	"io/ioutil"
+	"math/rand"
 	"os"
 	"strconv"
 	"testing"
@@ -103,4 +105,25 @@ func Test_filelineNumber(t *testing.T) {
 	b, _ := ioutil.ReadAll(file)
 	count := bytes.Count(b, []byte{'\n'}) + 1
 	fmt.Println(count)
+}
+
+// 生成一个唯一文件名
+func TempFileName(prefix, suffix string) string {
+	randBytes := make([]byte, 16)
+	rand.Read(randBytes)
+	return prefix+hex.EncodeToString(randBytes)+suffix
+}
+
+func TestTempFileName(t *testing.T) {
+	TempFileName("aa",".txt")
+}
+
+// 判断目录是否存在，如果不存在则创建
+func TestFileExist(t *testing.T) {
+	pwd, _ := os.Getwd()
+	filedir := pwd +"/temp"
+	_, fillerr := os.Stat(filedir)
+	if !os.IsExist(fillerr){
+		os.MkdirAll(filedir,os.ModePerm)
+	}
 }
