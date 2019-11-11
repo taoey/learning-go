@@ -8,7 +8,9 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/googollee/go-socket.io v1.4.2
 	github.com/gorilla/websocket v1.4.1
+	github.com/juju/ratelimit v1.0.1
 	github.com/pkg/errors v0.8.1 // indirect
+	github.com/robfig/cron/v3 v3.0.0
 	github.com/skip2/go-qrcode v0.0.0-20190110000554-dc11ecdae0a9
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
