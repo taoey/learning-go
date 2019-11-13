@@ -62,4 +62,5 @@
 | [excelize](https://xuri.me/excelize/zh-hans/)   | excel文件操作      |                                                              |
 | [sprig](https://github.com/Masterminds/sprig)   | 有用的 Go 模板函数 |                                                              |
 | [go-qrcode](https://github.com/skip2/go-qrcode) | 二维码生成         | [Go语言生成二维码是如此简单](https://www.flysnow.org/2017/09/29/go-qrcode.html) |
+| [go-micro](https://github.com/micro/go-micro)   | go的微服务框架     | [micro-in-cn/tutorials](https://github.com/micro-in-cn/tutorials) : Micro 中文示例、教程、资料，源码解读 |
 
