@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
 	"net"
+	"net/http"
 	"os"
 	"strings"
 	"testing"
@@ -43,4 +45,22 @@ func GetPulicIP() string {
 
 func TestGetPulicIP(t *testing.T) {
 	fmt.Println(GetPulicIP())
+}
+
+func getExternal() string {
+	resp, err := http.Get("http://myexternalip.com/raw")
+	if err != nil {
+		return ""
+	}
+	defer resp.Body.Close()
+	content, _ := ioutil.ReadAll(resp.Body)
+	//buf := new(bytes.Buffer)
+	//buf.ReadFrom(resp.Body)
+	//s := buf.String()
+	return string(content)
+}
+
+func TestGetExternal(t *testing.T) {
+	ip := getExternal()
+	fmt.Println(ip)
 }
