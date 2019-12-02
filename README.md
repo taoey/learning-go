@@ -27,7 +27,7 @@
 | [看云-golang](https://www.kancloud.cn/uvohp5na133/golang/933968) | 有很多错误及面试总结，适合各阶段go语言开发者                 |
 | [Go语言标准库](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/) |                                                              |
 
-### 推荐文章
+### 推荐文章/资料
 
 | 文章                                                         | 评价                                                 |
 | ------------------------------------------------------------ | ---------------------------------------------------- |
@@ -47,6 +47,7 @@
 | [如何在golang http服务端程序中读取2次Request Body？](https://www.zhihu.com/question/329045911/answer/714781838) | 一般情况下是这个需求是不需要的                       |
 | [os.open竟然在文件不存在时返回err==nil，亏我那么信任它](https://studygolang.com/topics/10068) | 在windows下直接使用`con`作为文件名，文件直接创建失败 |
 | [go 学习笔记之学习函数式编程前不要忘了函数基础](https://mp.weixin.qq.com/s/dprkCOvPZHr6fi_qC91dVw) | 你是gopher？居然不知道啥是函数式编程，好吧，你走吧   |
+| [gopherchina](https://github.com/gopherchina/conference)     |                                                      |
 
 ### 工具
 
