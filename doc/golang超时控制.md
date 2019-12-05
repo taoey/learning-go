@@ -140,3 +140,7 @@ PASS
 ```
 
 我们可以看到整个过程只用了5秒钟
+
+
+
+其他相关，大家可以去看一下golang的 net.http.client的源码，其中的setRequestCancel这个函数使用了类似的思路，另外为了加深理解，可以去看看context.context 的源码。

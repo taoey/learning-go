@@ -48,6 +48,7 @@
 | [os.open竟然在文件不存在时返回err==nil，亏我那么信任它](https://studygolang.com/topics/10068) | 在windows下直接使用`con`作为文件名，文件直接创建失败 |
 | [go 学习笔记之学习函数式编程前不要忘了函数基础](https://mp.weixin.qq.com/s/dprkCOvPZHr6fi_qC91dVw) | 你是gopher？居然不知道啥是函数式编程，好吧，你走吧   |
 | [gopherchina](https://github.com/gopherchina/conference)     |                                                      |
+| [Golang的反射reflect深入理解和示例](https://studygolang.com/articles/12348?fr=sidebar) | 写的挺好的一片文章                                   |
 
 ### 工具
 
