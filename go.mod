@@ -5,6 +5,7 @@ go 1.12
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/bamzi/jobrunner v0.0.0-20190912144227-6e09e010a32d
+	github.com/gen2brain/go-unarr v0.0.0-20190203132630-dd30f8db8e40
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/googollee/go-socket.io v1.4.2
 	github.com/gorilla/websocket v1.4.1
