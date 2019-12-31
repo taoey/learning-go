@@ -10,9 +10,9 @@ func TestChain(t *testing.T) {
 	user3 := newPresident("u3")
 	meeting := newCongress("meeting")
 
-	user1.SetSuccessor(user2)
-	user2.SetSuccessor(user3)
-	user3.SetSuccessor(meeting)
+	user1.SetNext(&user2)
+	user2.SetNext(&user3)
+	user3.SetNext(&meeting)
 
 	p1 := PurchaseRequest{45000, 100, "购买4.5万物品"}
 	user1.ProcessRequest(&p1)
