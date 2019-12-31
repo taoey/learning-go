@@ -122,8 +122,25 @@ func TestTempFileName(t *testing.T) {
 func TestFileExist(t *testing.T) {
 	pwd, _ := os.Getwd()
 	filedir := pwd +"/temp"
-	_, fillerr := os.Stat(filedir)
-	if !os.IsExist(fillerr){
+	_, fileErr := os.Stat(filedir)
+	if !os.IsExist(fileErr){
 		os.MkdirAll(filedir,os.ModePerm)
 	}
+}
+// 判断文件是否存在
+func TestFileExist2(t *testing.T) {
+	filepath := "README.assets2"
+	exists := Exists(filepath)
+	fmt.Println(exists)
+}
+
+func Exists(path string) bool {
+	_, err := os.Stat(path)    //os.Stat获取文件信息
+	if err != nil {
+		if os.IsExist(err) {
+			return true
+		}
+		return false
+	}
+	return true
 }
