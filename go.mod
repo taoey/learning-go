@@ -10,6 +10,7 @@ require (
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/googollee/go-socket.io v1.4.2
 	github.com/gorilla/websocket v1.4.1
+	github.com/isdamir/gotype v0.0.0-20200101084212-6aa1591106b2
 	github.com/juju/ratelimit v1.0.1
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/robfig/cron/v3 v3.0.0
