@@ -6,23 +6,21 @@ import (
 	"testing"
 )
 
-//实现链表的逆序 ： 就地逆序
-
-func Reverse01(node *LNode) {
-	if node == nil || node.Next == nil {
-		return
-	}
+//实现链表的逆序 ： 就地逆序(不带头结点)
+func Reverse01(head *LNode) *LNode {
 	var pre *LNode
-	var cur *LNode
-	next := node.Next
+	cur := head
+	var next *LNode
 
-	for next != nil {
-		cur = next.Next
-		next.Next = pre
-		pre = next
-		next = cur
+	for cur != nil {
+		cur = cur.Next
+
+		cur.Next = pre
+
+		pre = cur
+		cur = next
 	}
-	node.Next = pre
+	return pre
 }
 
 func Test01(t *testing.T) {
@@ -30,6 +28,6 @@ func Test01(t *testing.T) {
 	fmt.Println("就地逆序")
 	CreateNode(head, 8)
 	PrintNode("逆序前：", head)
-	Reverse01(head)
-	PrintNode("逆序后：", head)
+	head01 := Reverse01(head)
+	PrintNode("逆序后：", head01)
 }
