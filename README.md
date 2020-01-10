@@ -49,6 +49,8 @@
 | [go 学习笔记之学习函数式编程前不要忘了函数基础](https://mp.weixin.qq.com/s/dprkCOvPZHr6fi_qC91dVw) | 你是gopher？居然不知道啥是函数式编程，好吧，你走吧   |
 | [gopherchina](https://github.com/gopherchina/conference)     |                                                      |
 | [Golang的反射reflect深入理解和示例](https://studygolang.com/articles/12348?fr=sidebar) | 写的挺好的一片文章                                   |
+| [100 行写一个 go 的协程池 (任务池)](https://segmentfault.com/a/1190000021468353) | 小伙计，来写一个协程池吧                             |
+| [Go slice扩容分析之 不是double或1.25那么简单](https://www.jianshu.com/p/303daad705a3) | 供以后研究源码用                                     |
 
 ### 工具
 
