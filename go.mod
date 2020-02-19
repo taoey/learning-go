@@ -20,6 +20,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/skip2/go-qrcode v0.0.0-20190110000554-dc11ecdae0a9
 	github.com/streadway/amqp v0.0.0-20190827072141-edfb9018d271
+	github.com/taoey/go-log-listener v0.0.0-20200202081913-b5d368f81baf
 	github.com/toolkits/file v0.0.0-20160325033739-a5b3c5147e07 // indirect
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/multierr v1.1.0 // indirect
