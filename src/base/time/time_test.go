@@ -12,7 +12,7 @@ func Test01(t *testing.T) {
 	t1, err1 := time.Parse("12:00", time1)
 	t2, err2 := time.Parse("12:00", time2)
 
-	fmt.Println(t1.Before(t2),err1,err2)
+	fmt.Println(t1.Before(t2), err1, err2)
 }
 
 func Test02(t *testing.T) {
@@ -28,11 +28,11 @@ func Test02(t *testing.T) {
 }
 
 func Test03(t *testing.T) {
-	y,m,d :=time.Now().Date()
-	fmt.Println(y,m,d)
+	y, m, d := time.Now().Date()
+	fmt.Println(y, m, d)
 }
 
 func Test04(t *testing.T) {
-	str :=time.Now().Format("2006-01-02")
+	str := time.Now().Format("2006-01-02")
 	fmt.Println(str)
 }

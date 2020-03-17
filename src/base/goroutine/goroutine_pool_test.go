@@ -11,7 +11,7 @@ var pool = NewGoroutinePool()
 func TestGoroutinePool01(t *testing.T) {
 	pool.Run(&ConvertTask{
 		CallBack: func() {
-			time.Sleep(time.Second*10)
+			time.Sleep(time.Second * 10)
 			fmt.Println("hello1")
 
 		},
@@ -29,5 +29,5 @@ func TestGoroutinePool01(t *testing.T) {
 		},
 	})
 
-	time.Sleep(time.Second*60)
+	time.Sleep(time.Second * 60)
 }

@@ -2,7 +2,6 @@ package chain_of_responsibility
 
 import "fmt"
 
-
 // 采购单
 type PurchaseRequest struct {
 	Amount  float64 // 采购金额

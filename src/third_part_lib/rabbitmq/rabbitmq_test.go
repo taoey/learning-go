@@ -26,7 +26,6 @@ func Test01(t *testing.T) {
 	failOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-
 	// ------------- 声明队列 ---------------------
 	q, err := ch.QueueDeclare(
 		"hello", // name
@@ -38,7 +37,6 @@ func Test01(t *testing.T) {
 	)
 	failOnError(err, "Failed to declare a queue")
 
-
 	// ------------ 发送消息 ---------------------
 	body := "Hello World!"
 	err = ch.Publish(
@@ -46,7 +44,7 @@ func Test01(t *testing.T) {
 		q.Name, // routing key
 		false,  // mandatory
 		false,  // immediate
-		amqp.Publishing {
+		amqp.Publishing{
 			ContentType: "text/plain",
 			Body:        []byte(body),
 		})
@@ -64,7 +62,6 @@ func Test02(t *testing.T) {
 	failOnError(err, "Failed to open a channel")
 	defer ch.Close()
 
-
 	q, err := ch.QueueDeclare(
 		"hello", // name
 		false,   // durable
@@ -74,7 +71,6 @@ func Test02(t *testing.T) {
 		nil,     // arguments
 	)
 	failOnError(err, "Failed to declare a queue")
-
 
 	msgs, err := ch.Consume(
 		q.Name, // queue

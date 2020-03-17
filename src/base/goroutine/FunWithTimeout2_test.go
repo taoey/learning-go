@@ -1,20 +1,20 @@
 package goroutine
 
 import (
-"context"
-"errors"
-"log"
-"testing"
-"time"
+	"context"
+	"errors"
+	"log"
+	"testing"
+	"time"
 )
 
 func init() {
-	log.SetFlags(log.Ldate |log.LstdFlags| log.Lshortfile)
+	log.SetFlags(log.Ldate | log.LstdFlags | log.Lshortfile)
 }
-func  TestMainTest2(t *testing.T) {
+func TestMainTest2(t *testing.T) {
 	log.Println("Program started...")
 	err := operationWithTimeout2(time.Second * 5)
-	if err!=nil{
+	if err != nil {
 		log.Println(err)
 	}
 	log.Println("Program finished...")
@@ -34,8 +34,8 @@ func operationWithTimeout2(timeout time.Duration) error {
 	select {
 	case <-ctx.Done():
 		//log.Println(ctx.Err())
-		return errors.New("send timeout")  // 返回自定义错误
-	case result:= <-c:
+		return errors.New("send timeout") // 返回自定义错误
+	case result := <-c:
 		log.Println(result)
 		return nil
 	}
@@ -45,7 +45,7 @@ func operationWithTimeout2(timeout time.Duration) error {
 
 func slowOperation2(c chan bool) {
 	log.Println("slowOperation started...")
-	time.Sleep(60 * time.Second)  // 模拟耗时程序， 其中可以包含 c <- false
+	time.Sleep(60 * time.Second) // 模拟耗时程序， 其中可以包含 c <- false
 	c <- true
 	log.Println("slowOperation finished...")
 }

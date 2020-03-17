@@ -21,6 +21,6 @@ func InitMongo() {
 	MongoSession.SetPoolLimit(2000)           // 设置连接池数量
 }
 
-func InitLog()  {
+func InitLog() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 }

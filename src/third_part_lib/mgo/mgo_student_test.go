@@ -7,12 +7,12 @@ import (
 )
 
 type Student struct {
-	Name  string `bson:"name" json:"name"`
-	Age   int    `bson:"age" json:"age"`
+	Name string `bson:"name" json:"name"`
+	Age  int    `bson:"age" json:"age"`
 }
 
 // service 插入一个学生
-func TestSerInsertStudent01(t *testing.T)  {
+func TestSerInsertStudent01(t *testing.T) {
 	session := MongoSession.Copy()
 	defer session.Close()
 
@@ -29,7 +29,7 @@ func TestFind01(t *testing.T) {
 	defer session.Close()
 
 	filter := bson.M{
-		"name":"tao",
+		"name": "tao",
 	}
 	result := []Student{}
 	session.DB("").C("student").Find(filter).All(&result)

@@ -6,14 +6,14 @@ import (
 	"testing"
 )
 
-type(
+type (
 	Server struct {
-		Name 				 string              `bson:"name" json:"name"`   									// 名称
+		Name string `bson:"name" json:"name"` // 名称
 	}
 )
 
 // struct->json 转换
-func Struct2Json(data interface{})  {
+func Struct2Json(data interface{}) {
 	bytes, _ := json.Marshal(data)
 	fmt.Println(string(bytes))
 }
