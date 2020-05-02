@@ -1,0 +1,25 @@
+goos: darwin
+goarch: amd64
+pkg: github.com/Taoey/Lets-Go/src/base/bench_test
+BenchmarkStaticCapacity-12     	    2139	    559281 ns/op	 1007622 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    2029	    572547 ns/op	 1007620 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    2031	    555618 ns/op	 1007619 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    1972	    556474 ns/op	 1007618 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    1954	    558323 ns/op	 1007618 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    2025	    555008 ns/op	 1007619 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    1990	    560643 ns/op	 1007618 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    2019	    558631 ns/op	 1007618 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    1971	    556028 ns/op	 1007618 B/op	       1 allocs/op
+BenchmarkStaticCapacity-12     	    1965	    558739 ns/op	 1007618 B/op	       1 allocs/op
+BenchmarkDynamicCapacity-12    	    1191	    906934 ns/op	 5863440 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1090	   1003878 ns/op	 5863439 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	     910	   1288676 ns/op	 5863440 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1201	   1207117 ns/op	 5863440 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1184	    890330 ns/op	 5863440 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1212	    890311 ns/op	 5863436 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1180	    940266 ns/op	 5863439 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1078	    928244 ns/op	 5863436 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1143	    923114 ns/op	 5863439 B/op	      35 allocs/op
+BenchmarkDynamicCapacity-12    	    1178	    918336 ns/op	 5863438 B/op	      35 allocs/op
+PASS
+ok  	github.com/Taoey/Lets-Go/src/base/bench_test	28.703s
