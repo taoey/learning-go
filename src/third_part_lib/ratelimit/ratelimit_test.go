@@ -58,12 +58,15 @@ func Test03(t *testing.T) {
 
 	fmt.Println(strByte)
 	current := 0
+
+	//打印监控
 	go func() {
 		for {
 			fmt.Println(len(resultBytes), resultBytes, bucket.Available(), current)
 			time.Sleep(time.Millisecond * 200)
 		}
 	}()
+
 	for len(resultBytes) < len(strByte) {
 		bucket.Wait(2)
 		resultBytes = append(resultBytes, strByte[current])
