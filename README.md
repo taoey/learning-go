@@ -27,6 +27,7 @@
 | [看云-golang](https://www.kancloud.cn/uvohp5na133/golang/933968) | 有很多错误及面试总结，适合各阶段go语言开发者                 |
 | [Go语言标准库](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/) |                                                              |
 | http://www.topgoer.com/                                      | 资料特别全，非常推荐                                         |
+| [qyuhen](https://github.com/qyuhen)/**[book](https://github.com/qyuhen/book)** | golang 学习笔记 很好的pdf 推荐                               |
 
 ### 推荐文章/资料
 
@@ -55,18 +56,19 @@
 
 ### 工具
 
-- [jsonTOGo ](https://mholt.github.io/json-to-go/)：好用的json转go struct工具
+- [jsonTOGo ](https://mholt.github.io/json-to-go/)/ [json2go](https://oktools.net/json2go):：好用的json转go struct工具, 提高编码效率
 - [gopm.io](https://gopm.io/)：科学下载第三方包
 - [百度BFE](https://www.bfe-networks.net/)：开源的应用负载均衡产品，类似于Nginx
 
 
 
-### 相关库
+### 第三方库
 
-| 名称                                            | 功能               | 备注                                                         |
-| ----------------------------------------------- | ------------------ | ------------------------------------------------------------ |
-| [excelize](https://xuri.me/excelize/zh-hans/)   | excel文件操作      |                                                              |
-| [sprig](https://github.com/Masterminds/sprig)   | 有用的 Go 模板函数 |                                                              |
-| [go-qrcode](https://github.com/skip2/go-qrcode) | 二维码生成         | [Go语言生成二维码是如此简单](https://www.flysnow.org/2017/09/29/go-qrcode.html) |
-| [go-micro](https://github.com/micro/go-micro)   | go的微服务框架     | [micro-in-cn/tutorials](https://github.com/micro-in-cn/tutorials) : Micro 中文示例、教程、资料，源码解读 |
+| 名称                                                         | 功能               | 备注                                                         |
+| ------------------------------------------------------------ | ------------------ | ------------------------------------------------------------ |
+| [excelize](https://xuri.me/excelize/zh-hans/)                | excel文件操作      |                                                              |
+| [sprig](https://github.com/Masterminds/sprig)                | 有用的 Go 模板函数 |                                                              |
+| [go-qrcode](https://github.com/skip2/go-qrcode)              | 二维码生成         | [Go语言生成二维码是如此简单](https://www.flysnow.org/2017/09/29/go-qrcode.html) |
+| [go-micro](https://github.com/micro/go-micro)                | go的微服务框架     | [micro-in-cn/tutorials](https://github.com/micro-in-cn/tutorials) : Micro 中文示例、教程、资料，源码解读 |
+| [lxn](https://github.com/lxn)/**[walk](https://github.com/lxn/walk)** | Golang-GUI编程框架 | 编译出的可执行文件仅支持Windows平台                          |
 
