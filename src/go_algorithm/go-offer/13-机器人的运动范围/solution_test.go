@@ -26,6 +26,10 @@ func movingCount(m int, n int, k int) int {
 	queue.PushBack(&Point{0, 0})
 	count := 1
 
+	// 方向数组 上下左右
+	dx := []int{-1, 1, 0, 0}
+	dy := []int{0, 0, -1, 1}
+
 	for queue.Len() != 0 {
 		item := queue.Front()
 		queue.Remove(queue.Front())
@@ -35,29 +39,17 @@ func movingCount(m int, n int, k int) int {
 
 		arr[x][y] = 2
 
-		// 上
-		if x-1 >= 0 && arr[x-1][y] == 1 {
-			queue.PushBack(&Point{x - 1, y})
-			arr[x-1][y] = 2
-			count++
-		}
-		// 下
-		if x+1 < len(arr) && arr[x+1][y] == 1 {
-			queue.PushBack(&Point{x + 1, y})
-			arr[x+1][y] = 2
-			count++
-		}
-		// 左
-		if y-1 >= 0 && arr[x][y-1] == 1 {
-			queue.PushBack(&Point{x, y - 1})
-			arr[x][y-1] = 2
-			count++
-		}
-		// 右
-		if y+1 < len(arr[0]) && arr[x][y+1] == 1 {
-			queue.PushBack(&Point{x, y + 1})
-			arr[x][y+1] = 2
-			count++
+		//上下左右四个点判断
+		for i := 0; i < 4; i++ {
+			x = item.Value.(*Point).x + dx[i]
+			y = item.Value.(*Point).y + dy[i]
+
+			//越界判断
+			if x >= 0 && x < len(arr) && y >= 0 && y < len(arr[0]) && arr[x][y] == 1 {
+				queue.PushBack(&Point{x, y})
+				arr[x][y] = 2
+				count++
+			}
 		}
 
 	}
@@ -87,5 +79,6 @@ func TestGetSum(t *testing.T) {
 }
 
 func TestSolution(t *testing.T) {
-	movingCount(3, 2, 17)
+	count := movingCount(3, 2, 17)
+	fmt.Println(count)
 }
