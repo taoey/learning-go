@@ -31,7 +31,7 @@ func main() {
 	WordExePath = properties.GetDefault("path", `C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE`)
 
 	var filename string
-	fmt.Println("请输入文件夹名称:")
+	fmt.Println("请输入待处理文件夹名称:")
 	fmt.Scanln(&filename)
 	//filename = "data"
 
@@ -52,7 +52,9 @@ func main() {
 		RenameDirFilesByJson("result_" + filename)
 	}
 
-	fmt.Println("当前目录处理完毕")
+	fmt.Println("恭喜您，当前目录处理完毕")
+	fmt.Println("当前窗口将于5秒后自动关闭...")
+	time.Sleep(time.Second * 3)
 }
 
 // File copies a single file from src to dst

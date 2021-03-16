@@ -15,3 +15,12 @@ func TestReadWorkList(t *testing.T) {
 	list := ReadWorkList("result_data")
 	fmt.Println(list)
 }
+
+func Test00(t *testing.T) {
+	var sarr []string
+	sarr = []string{"1"}
+
+	prArr := &sarr
+
+	fmt.Println((*prArr)[0])
+}
