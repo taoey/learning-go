@@ -293,7 +293,6 @@ func UpdateWorkList(sourceDir string, filename string) {
 			break
 		}
 	}
-	fmt.Println(*WorkList)
 	// 打开文件句柄写入json
 	filePtr, err := os.Create(WORKLIST_DIR + string(os.PathSeparator) + sourceDir + ".json")
 	defer filePtr.Close()
