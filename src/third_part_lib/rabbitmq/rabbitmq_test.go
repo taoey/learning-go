@@ -17,7 +17,7 @@ func Test01(t *testing.T) {
 
 	// ------------- 请求连接 ----------------------
 	// URL解析：amqp://{用户名}:{密码}@{ip}:{port}/{虚拟主机vhost}
-	conn, err := amqp.Dial("amqp://admin:admin@47.98.165.192:5672/my_vhost")
+	conn, err := amqp.Dial("amqp://guest:guest@127.0.0.1:5672/my_vhost")
 	failOnError(err, "Failed to connect to RabbitMQ")
 	defer conn.Close()
 
@@ -54,7 +54,7 @@ func Test01(t *testing.T) {
 
 // receive
 func Test02(t *testing.T) {
-	conn, err := amqp.Dial("amqp://admin:admin@47.98.165.192:5672/my_vhost")
+	conn, err := amqp.Dial("amqp://guest:guest@127.0.0.1:5672/my_vhost")
 	failOnError(err, "Failed to connect to RabbitMQ")
 	defer conn.Close()
 

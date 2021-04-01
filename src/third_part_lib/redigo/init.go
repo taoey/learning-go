@@ -15,19 +15,19 @@ func init() {
 	initRedis()
 }
 
-
-func initLog()  {
+func initLog() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 }
 
 var (
 	Pool *redis.Pool
 )
+
 // 初始化redis
 func initRedis() {
-	server := "localhost:6379"
-	password :="tao"
-	Pool = newPool(server,password)
+	server := "192.168.3.101:6479"
+	password := "smartrtb2win"
+	Pool = newPool(server, password)
 	cleanupHook()
 }
 
@@ -59,7 +59,6 @@ func newPool(server string, pwd string) *redis.Pool {
 	}
 	return &redisPool
 }
-
 
 func cleanupHook() {
 	c := make(chan os.Signal, 1)

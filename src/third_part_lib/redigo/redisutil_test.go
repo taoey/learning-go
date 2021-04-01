@@ -5,7 +5,9 @@ import (
 	"log"
 	"os"
 	"testing"
+	"time"
 )
+
 // 可单独运行的redis连接demo
 func TestConnect(t *testing.T) {
 	//使用redis封装的Dial进行tcp连接
@@ -34,3 +36,22 @@ func errCheck(err error) {
 }
 
 // 以下测试用例测试redigo_util中的函数
+
+// 可单独运行的redis连接demo
+func TestConnectRedis(t *testing.T) {
+	//使用redis封装的Dial进行tcp连接
+	dialOption := redis.DialPassword("smartrtb2win")
+	c, err := redis.Dial("tcp", "192.168.3.101:6479", dialOption)
+	errCheck(err)
+
+	defer c.Close()
+
+	//使用redis的string类型获取set的k/v信息
+	for {
+		r, getErr := redis.String(c.Do("get", "tao"))
+		errCheck(getErr)
+		log.Print(r)
+		time.Sleep(time.Second * 2)
+	}
+
+}
