@@ -17,3 +17,4 @@ vendor/
 # idea
 .idea/
 *.yaml
+*.DS_Store
