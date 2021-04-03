@@ -1,7 +1,0 @@
-2019-09-26 14:36:54.849	INFO	zap/zap_demo2_test.go:49	info
-2019-09-26 14:38:19.010	INFO	zap/zap_demo2_test.go:49	info
-2019-09-26 14:42:42.431	INFO	zap/zap_demo2_test.go:49	info
-2019-09-26 14:43:26.353	INFO	zap/zap_demo2_test.go:49	info
-2019-09-26 14:43:26.365	DEBUG	zap/zap_demo2_test.go:50	hello debug
-2020-06-03 16:59:09.778	INFO	zap/zap_demo2_test.go:51	info
-2020-06-03 16:59:09.808	DEBUG	zap/zap_demo2_test.go:52	hello debug
