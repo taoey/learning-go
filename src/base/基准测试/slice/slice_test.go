@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-const TotalTimes = 1000000
+const TotalTimes = 1 << 16
 
 func StaticCapacity() {
 

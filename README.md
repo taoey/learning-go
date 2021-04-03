@@ -28,6 +28,7 @@
 | [Go语言标准库](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/) |                                                              |
 | http://www.topgoer.com/                                      | 资料特别全，非常推荐                                         |
 | [qyuhen](https://github.com/qyuhen)/**[book](https://github.com/qyuhen/book)** | golang 学习笔记 很好的pdf 推荐                               |
+| http://wen.topgoer.com/docs/gozhuanjia/gogfjhk               | 《Go专家编程》                                               |
 
 ### 推荐文章/资料
 
@@ -59,8 +60,6 @@
 - [jsonTOGo ](https://mholt.github.io/json-to-go/)/ [json2go](https://oktools.net/json2go):：好用的json转go struct工具, 提高编码效率
 - [gopm.io](https://gopm.io/)：科学下载第三方包
 - [百度BFE](https://www.bfe-networks.net/)：开源的应用负载均衡产品，类似于Nginx
-
-
 
 ### 第三方库
 
