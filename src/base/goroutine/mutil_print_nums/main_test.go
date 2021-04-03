@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"testing"
-	"time"
 )
 
 // 交替打印
@@ -12,12 +11,15 @@ import (
 
 func TwoGoroutinePrintNum(max int) {
 	ch := make(chan int)
-
+	exitch := make(chan int)
 	go func() {
 		for i := 0; i <= max; i++ {
 			ch <- 1
 			if i%2 == 0 {
 				fmt.Println(i)
+			}
+			if i == max {
+				exitch <- 1
 			}
 		}
 	}()
@@ -28,12 +30,15 @@ func TwoGoroutinePrintNum(max int) {
 			if i%2 == 1 {
 				fmt.Println(i)
 			}
+			if i == max {
+				exitch <- 1
+			}
 		}
 	}()
 
-	time.Sleep(time.Second * 3)
+	<-exitch
 }
 
 func TestTwoGoroutinePrintNum(t *testing.T) {
-	TwoGoroutinePrintNum(20)
+	TwoGoroutinePrintNum(1000)
 }
